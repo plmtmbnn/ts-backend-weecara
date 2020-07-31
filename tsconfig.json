@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"pretty": true,
+		"sourceMap": true,
+		"target": "es6",
+		"lib": [
+			"dom",
+			"esnext"
+		],
+		"noImplicitAny": false,
+		"outDir": "./build",
+		"baseUrl": "./src",
+		"alwaysStrict": true,
+		"typeRoots": [
+			"node_modules/@types"
+		],
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
