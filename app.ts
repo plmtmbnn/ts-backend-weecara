@@ -15,8 +15,8 @@ class App {
       this.app.use(express.json({ limit: '100mb' }));
       this.app.use(express.urlencoded({ limit: '100mb' }));
       this.app.use('/', router);
-      const db = new NodePostgres();
-      await db.init();
+      // const db = new NodePostgres();
+      // await db.init();
     }
 }
 

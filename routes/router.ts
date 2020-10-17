@@ -1,8 +1,5 @@
 import { Request, Response } from 'express';
 
-// Middleware
-// import { dashboardMiddleware } from '../middleware/middleware';
-
 // Controller
 import { userController } from '../controller/controller.user';
 
@@ -17,7 +14,7 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 // ===== AUTHENTICATION
-router.post('/login', userController.login);
+router.post('/auth/login', userController.login);
 
 
 module.exports = router;

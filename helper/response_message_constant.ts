@@ -1,8 +1,9 @@
 /*
     THIS IS CONSTANTS FOR EVERY RESPONSE MESSAGES
     =============================================
-    It can : - reduces typo
-                     - not to write same purpose of response message with another content
+    It can : 
+    - reduces typo
+    - not to write same purpose of response message with another content
 
     If want to add new response message, please add it below
 */
