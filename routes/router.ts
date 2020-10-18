@@ -1,7 +1,11 @@
 import { Request, Response } from 'express';
 
 // Controller
-import { userController } from '../controller/controller.user';
+import { authController } from '../controller/controller.auth';
+import { userProfileController } from '../controller/controller.user-profile';
+
+// Middleware
+import { middleware } from '../middleware/middleware';
 
 const express = require('express');
 const router = express.Router();
@@ -14,7 +18,9 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 // ===== AUTHENTICATION
-router.post('/auth/login', userController.login);
+router.post('/auth/login', authController.login);
 
+// ===== USER
+router.post('/user/profile', middleware, userProfileController.getUserProfile);
 
 module.exports = router;

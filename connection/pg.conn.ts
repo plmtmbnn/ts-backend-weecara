@@ -7,15 +7,19 @@ export class NodePostgres {
     client: any;
 
     async init (): Promise<void> {
+      const user: string = CryptoJS.AES.decrypt(process.env.DB_USER.toString(), 'weecara').toString(CryptoJS.enc.Utf8);
+      const password: string = CryptoJS.AES.decrypt(process.env.DB_PASS.toString(), 'weecara').toString(CryptoJS.enc.Utf8);
+
       poolConnection = await new Pool({
-        user: CryptoJS.AES.decrypt(process.env.DB_USER.toString(), 'FIT999').toString(CryptoJS.enc.Utf8),
+        user,
         host: process.env.DB_HOST,
         database: process.env.DB_NAME,
-        password: CryptoJS.AES.decrypt(process.env.DB_PASS.toString(), 'FIT999').toString(CryptoJS.enc.Utf8),
+        password,
         port: process.env.DB_PORT,
         max: 40,
-        idleTimeoutMillis: 60000,
-        application_name: 'ts_e_logistic'
+        idleTimeoutMillis: 0,
+        connectionTimeoutMillis: 0,
+        application_name: 'weecara'
       });
     }
 

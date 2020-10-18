@@ -19,37 +19,37 @@ module.exports = {
         NODE_ENV: 'local',
         BE_PORT: 1234,
         DB_HOST: 'localhost',
-        DB_NAME: 'pinjammodal',
-        DB_USER: 'U2FsdGVkX1+fqpyhWWLYpxbfm72pAJWILsASrTJxq+s=',
-        DB_PASS: 'U2FsdGVkX19ppaXgX8bL4EHUvxZyT2MQxLRSMUF1Jz8=',
+        DB_NAME: 'weecara',
+        DB_USER: 'U2FsdGVkX18K7Dl1twyed11eTSOBsvuI4Z/6+Br66TA=',
+        DB_PASS: 'U2FsdGVkX1+LyOt6+IP/a1Ir0bTgf8Gy8RtodNeQSoU=',
         DB_PORT: 5432,
         REDIS_HOST: '127.0.0.1',
         REDIS_PORT: 6379,
-        REDIS_CRYPT: 'U2FsdGVkX1+75qEKxsZ7wNwUGFKkKYKJbxyjnXWXaGJ8ksfvuJIONvpAV3TL4AvWhc3ddatS3D6lZPmnRBxK8A=='
+        REDIS_CRYPT: 'U2FsdGVkX1/fvJXR50topNwjYKnVg+/avzxsXoZ/j2Y='
       },
       env_development: {
         NODE_ENV: 'development',
         BE_PORT: 1234,
         DB_HOST: 'localhost',
-        DB_NAME: 'pinjammodal',
-        DB_USER: 'U2FsdGVkX1+fqpyhWWLYpxbfm72pAJWILsASrTJxq+s=',
-        DB_PASS: 'U2FsdGVkX19ppaXgX8bL4EHUvxZyT2MQxLRSMUF1Jz8=',
+        DB_NAME: 'weecara',
+        DB_USER: 'U2FsdGVkX18K7Dl1twyed11eTSOBsvuI4Z/6+Br66TA=',
+        DB_PASS: 'U2FsdGVkX1+LyOt6+IP/a1Ir0bTgf8Gy8RtodNeQSoU=',
         DB_PORT: 5432,
-        REDIS_HOST: 'pinjammodal-public.redis.ap-southeast-5.rds.aliyuncs.com',
+        REDIS_HOST: '127.0.0.1',
         REDIS_PORT: 6379,
-        REDIS_CRYPT: 'U2FsdGVkX19e1LchQkEa3XgFa9tfP1M44O4a8iMQ/64='
+        REDIS_CRYPT: 'U2FsdGVkX1/fvJXR50topNwjYKnVg+/avzxsXoZ/j2Y='
       },
       env_production: {
         NODE_ENV: 'production',
         BE_PORT: 1234,
         DB_HOST: 'localhost',
-        DB_NAME: 'pinjammodal',
-        DB_USER: 'U2FsdGVkX1+fqpyhWWLYpxbfm72pAJWILsASrTJxq+s=',
+        DB_NAME: 'weecara',
+        DB_USER: 'U2FsdGVkX18K7Dl1twyed11eTSOBsvuI4Z/6+Br66TA=',
         DB_PASS: 'U2FsdGVkX18wHOTxl1Wc+gYaNydWP0vWTv3oqMxwCIWa+RW69Yq2/kelhaMv9g54',
         DB_PORT: 5432,
         REDIS_HOST: '127.0.0.1',
         REDIS_PORT: 6379,
-        REDIS_CRYPT: 'U2FsdGVkX1+75qEKxsZ7wNwUGFKkKYKJbxyjnXWXaGJ8ksfvuJIONvpAV3TL4AvWhc3ddatS3D6lZPmnRBxK8A=='
+        REDIS_CRYPT: 'U2FsdGVkX1/fvJXR50topNwjYKnVg+/avzxsXoZ/j2Y='
       }
     }
   ]
